@@ -1,0 +1,252 @@
+/*
+ * ThaiLoko S.L. (fictional company) - careers data.
+ * Edit this file to change the contact email or the job offers.
+ * No logic lives here: it only declares two global constants.
+ */
+
+// Single place to change the contact email (used by every page).
+const TL_CONFIG = {
+  email: "empleo@thailoko.example",
+  referencePrefix: "TL-2026-",
+};
+
+const TL_INTRO =
+  "Cada oferta incluye retribución, requisitos y condiciones de forma transparente. Los importes parten del salario mínimo interprofesional de 2026 (1.221 € en 14 pagas, 17.094 € anuales) y de las tablas del convenio de hostelería de la Comunidad de Madrid, con una mejora voluntaria de ThaiLoko coherente con su compromiso de salarios competitivos.";
+
+const TL_HUB = "ThaiLoko S.L., hub de Cuyna en Tetuán (Calle de Salamanca 20, Madrid).";
+const TL_OFFICE_BASE = "ThaiLoko S.L., oficina de gestión (presencial e híbrido), con servicio centralizado a todos los hubs de ThaiLoko";
+
+const TL_JOBS = [
+  {
+    id: "chef",
+    area: "Cocina",
+    title: "Chef de cocina (M/H)",
+    shortWorkplace: "Hub de Cuyna, Tetuán (Madrid)",
+    workplace: TL_HUB,
+    vacancies: 1,
+    contractShort: "Indefinido · 40 h/semana",
+    contract: "Indefinido, jornada completa de 40 horas semanales, con cuadrante rotativo (incluye fines de semana) publicado con 15 días de antelación.",
+    salaryShort: "26.000 € - 29.000 €",
+    salary: "26.000 € - 29.000 € brutos anuales en 14 pagas (convenio más mejora voluntaria).",
+    duties: [
+      "Diseñar y estandarizar las recetas y fichas técnicas de la carta de comida callejera tailandesa adaptada al paladar occidental.",
+      "Controlar el coste de materia prima (escandallos) y el inventario bajo sistema FEFO/FIFO.",
+      "Garantizar el APPCC, la gestión de alérgenos y la segregación de residuos en 5 fracciones.",
+      "Dirigir al equipo de cocina (sous chef, dos ayudantes y lavaplatos) y coordinarse con reparto y administración.",
+      "Organizar el programa diario de donación de caldos y guisos a refugios sociales.",
+    ],
+    required: [
+      "Mínimo 3 años como jefe o segundo de cocina.",
+      "Formación en Cocina y Gastronomía (grado medio o superior) o experiencia equivalente.",
+      "Dominio del wok y de la cocina asiática.",
+      "Formación en manipulación de alimentos y alérgenos.",
+    ],
+    nice: [
+      "Experiencia en cocinas virtuales o en delivery.",
+      "Conocimientos de cocina de aprovechamiento.",
+      "Inglés.",
+    ],
+    offer: "Estabilidad laboral, EPIs y equipamiento de calidad, formación continua y opción de crecer hacia la jefatura del futuro restaurante físico.",
+    how: "Enviar currículum indicando \"Chef de cocina\" en el asunto. Los datos se tratarán conforme al RGPD.",
+    subject: "Chef de cocina",
+  },
+  {
+    id: "sous-chef",
+    area: "Cocina",
+    title: "Sous chef (M/H)",
+    shortWorkplace: "Hub de Cuyna, Tetuán (Madrid)",
+    workplace: TL_HUB,
+    vacancies: 1,
+    contractShort: "Indefinido · 40 h/semana",
+    contract: "Indefinido, jornada completa de 40 horas semanales, turnos de tarde-noche con dos días de descanso a la semana.",
+    salaryShort: "22.000 € - 25.000 €",
+    salary: "22.000 € - 25.000 € brutos anuales en 14 pagas (convenio más mejora voluntaria).",
+    duties: [
+      "Sustituir al chef en su ausencia y dirigir el servicio de cena.",
+      "Supervisar el mise en place y el cumplimiento de las fichas técnicas y los tiempos de salida.",
+      "Controlar las mermas, la recepción de mercancía y la rotación FEFO/FIFO junto al ayudante de cocina.",
+      "Formar y coordinar al ayudante de cocina y al lavaplatos.",
+      "Llevar los registros diarios de APPCC y dirigir el cierre del turno: segregación de residuos y donación.",
+    ],
+    required: [
+      "Mínimo 3 años de experiencia en cocina, de ellos al menos 1 como jefe de partida o segundo.",
+      "Formación en Cocina y Gastronomía.",
+      "Manejo del wok.",
+      "Formación en manipulación de alimentos y alérgenos.",
+    ],
+    nice: [
+      "Experiencia en delivery o cocinas virtuales.",
+      "Experiencia formando equipos.",
+      "Inglés.",
+    ],
+    offer: "Contrato indefinido, plan de formación para asumir la jefatura de cocina, EPIs de calidad y opción de crecer hacia chef de un segundo hub o del futuro restaurante físico.",
+    how: "Enviar currículum indicando \"Sous chef\" en el asunto.",
+    subject: "Sous chef",
+  },
+  {
+    id: "ayudante-cocina",
+    area: "Cocina",
+    title: "Ayudante de cocina (M/H)",
+    shortWorkplace: "Hub de Cuyna, Tetuán (Madrid)",
+    workplace: TL_HUB,
+    vacancies: 2,
+    contractShort: "Indefinido · 40 h/semana",
+    contract: "Indefinido, jornada completa de 40 horas semanales, con turnos rotativos.",
+    salaryShort: "17.800 € - 19.500 €",
+    salary: "17.800 € - 19.500 € brutos anuales en 14 pagas.",
+    duties: [
+      "Preparar el mise en place (corte, bases y salsas) siguiendo las fichas técnicas.",
+      "Apoyar la línea de wok en las horas punta.",
+      "Recibir y almacenar mercancía bajo FEFO/FIFO y registrar entradas y salidas en el ERP.",
+      "Envasar y etiquetar los pedidos y las raciones del programa de donación.",
+      "Mantener limpia y ordenada su estación.",
+    ],
+    required: [
+      "Formación en manipulación de alimentos.",
+      "Disponibilidad de turnos de tarde y fines de semana.",
+      "Capacidad de trabajo en equipo.",
+    ],
+    nice: [
+      "Formación Profesional Básica o grado medio en Cocina.",
+      "Experiencia previa en cocina o en almacén de alimentos.",
+      "Sensibilidad ambiental.",
+    ],
+    offer: "Primer empleo estable en cocina, formación en el puesto y trayectoria hacia cocinero de línea.",
+    how: "Enviar currículum indicando \"Ayudante de cocina\" en el asunto.",
+    subject: "Ayudante de cocina",
+  },
+  {
+    id: "lavaplatos",
+    area: "Cocina",
+    title: "Lavaplatos (M/H)",
+    shortWorkplace: "Hub de Cuyna, Tetuán (Madrid)",
+    workplace: TL_HUB,
+    vacancies: 1,
+    contractShort: "Indefinido · 40 h/semana",
+    contract: "Indefinido, jornada completa de 40 horas semanales, turnos de tarde-noche con dos días de descanso a la semana.",
+    salaryShort: "17.300 € - 18.000 €",
+    salary: "17.300 € - 18.000 € brutos anuales en 14 pagas.",
+    duties: [
+      "Lavar y desinfectar woks, utensilios, bandejas y menaje de cocina, incluido el uso del lavavajillas industrial.",
+      "Mantener ordenada y desinfectada la zona de lavado y aplicar el protocolo de \"suelo seco\".",
+      "Gestionar la segregación de residuos en 5 fracciones y el depósito de aceite vegetal usado.",
+      "Apoyar en la recepción de mercancía y en el cierre del turno.",
+    ],
+    required: [
+      "Formación en manipulación de alimentos.",
+      "Capacidad para trabajar de pie y en ambientes de calor.",
+      "Puntualidad.",
+    ],
+    nice: [
+      "Experiencia en lavado industrial.",
+      "Conocimiento de los productos químicos de limpieza y de su etiquetado.",
+    ],
+    offer: "Contrato indefinido, calzado antideslizante, guantes y delantal impermeable facilitados por la empresa, formación en prevención de riesgos y opción de promoción a ayudante de cocina.",
+    how: "Enviar currículum indicando \"Lavaplatos\" en el asunto.",
+    subject: "Lavaplatos",
+  },
+  {
+    id: "repartidor",
+    area: "Reparto",
+    title: "Repartidor/a eléctrico (M/H)",
+    shortWorkplace: "Hub de Cuyna, Tetuán (Madrid)",
+    workplace: "ThaiLoko S.L., reparto desde el hub de Cuyna en Tetuán hacia su radio de cobertura (Tetuán, Chamberí y zonas limítrofes).",
+    vacancies: 2,
+    contractShort: "Por cuenta ajena · 40 h o 20 h/semana",
+    contract: "Contrato laboral por cuenta ajena en régimen general (sin falso autónomo), jornada completa de 40 horas o parcial de 20 horas, en turnos de comida y cena.",
+    salaryShort: "17.300 € - 19.000 €",
+    salary: "17.300 € - 19.000 € brutos anuales en 14 pagas para jornada completa (proporcional en parcial), más un variable por puntualidad y valoración del cliente, sin penalizar la velocidad de conducción.",
+    duties: [
+      "Entregar los pedidos en bicicleta o moto eléctrica de la flota de ThaiLoko, cuidando el estado del envase.",
+      "Revisar el vehículo antes de cada turno y comunicar cualquier avería.",
+      "Atender al cliente en la entrega y registrar incidencias.",
+    ],
+    required: [
+      "Permiso de conducción adecuado al vehículo asignado (o habilidad acreditada en bicicleta eléctrica).",
+      "Conocimiento de la ciudad de Madrid.",
+      "Trato cordial con el cliente.",
+    ],
+    nice: [
+      "Experiencia en reparto.",
+      "Manejo de aplicaciones de navegación.",
+    ],
+    offer: "Vehículo, casco homologado, chaleco reflectante y ropa de agua facilitados por la empresa; tiempos de entrega realistas y estabilidad frente a la precariedad de las plataformas.",
+    how: "Enviar currículum indicando \"Repartidor/a\" en el asunto.",
+    subject: "Repartidor/a",
+  },
+  {
+    id: "administrativo",
+    area: "Gestión",
+    title: "Administrativo/a de gestión (M/H)",
+    shortWorkplace: "Oficina de gestión (presencial e híbrido)",
+    workplace: TL_OFFICE_BASE + ".",
+    vacancies: 1,
+    contractShort: "Indefinido · 40 h/semana",
+    contract: "Indefinido, jornada completa de 40 horas semanales, con cobertura de las franjas de comida y cena.",
+    salaryShort: "19.500 € - 22.500 €",
+    salary: "19.500 € - 22.500 € brutos anuales en 14 pagas.",
+    duties: [
+      "Llevar la gestión administrativa del negocio: facturación, cobros, pagos a proveedores y documentación para la asesoría fiscal.",
+      "Conciliar las liquidaciones y las comisiones de Glovo, Uber Eats y Just Eat.",
+      "Monitorizar los pedidos de la web propia y de los agregadores, y coordinar su salida con cocina y con los repartidores.",
+      "Gestionar incidencias, reclamaciones y reembolsos.",
+      "Supervisar las alertas de stock en el ERP, actualizar los datos del Contador de Impacto Sostenible y elaborar los informes de KPI (tiempos, incidencias, comisiones).",
+    ],
+    required: [
+      "Técnico/a Superior en Administración y Finanzas, Técnico en Gestión Administrativa o formación equivalente.",
+      "Manejo de Excel y de programas de facturación.",
+      "Excelente comunicación escrita y oral.",
+    ],
+    nice: [
+      "Experiencia en delivery o en atención al cliente.",
+      "Conocimientos de ERP.",
+      "Inglés.",
+    ],
+    offer: "Contrato indefinido, formación en herramientas de gestión y participación en el desarrollo del canal de venta propio.",
+    how: "Enviar currículum indicando \"Administrativo/a de gestión\" en el asunto.",
+    subject: "Administrativo/a de gestión",
+  },
+  {
+    id: "rrhh",
+    area: "Gestión",
+    title: "Responsable de Recursos Humanos (M/H)",
+    shortWorkplace: "Oficina de gestión (presencial e híbrido)",
+    workplace: TL_OFFICE_BASE + " y presencia periódica en cada cocina.",
+    vacancies: 1,
+    contractShort: "Indefinido · 40 h/semana",
+    contract: "Indefinido, jornada completa de 40 horas semanales.",
+    salaryShort: "24.000 € - 28.000 €",
+    salary: "24.000 € - 28.000 € brutos anuales en 14 pagas.",
+    duties: [
+      "Gestionar la selección y la incorporación del personal: ofertas, entrevistas, pruebas y acogida.",
+      "Tramitar contratos y altas en la Seguridad Social (Contrat@ y Sistema RED) y coordinar las nóminas con la asesoría laboral.",
+      "Elaborar los cuadrantes de turnos y llevar el registro de jornada.",
+      "Coordinar la prevención de riesgos laborales y la formación con el Servicio de Prevención Ajeno.",
+      "Mediar en los conflictos, impulsar el clima laboral (encuesta mensual y debriefing) y seguir los indicadores de rotación y absentismo.",
+    ],
+    required: [
+      "Grado en Relaciones Laborales y Recursos Humanos, o grado superior con formación específica en RR. HH.",
+      "Mínimo 2 años de experiencia en el área.",
+      "Conocimiento del Estatuto de los Trabajadores y del convenio de hostelería de la Comunidad de Madrid.",
+      "Formación en prevención de riesgos laborales (nivel básico).",
+    ],
+    nice: [
+      "Experiencia en hostelería con turnos rotativos.",
+      "Formación en mediación.",
+      "Dominio de Excel.",
+    ],
+    offer: "Contrato indefinido, autonomía para diseñar las políticas de personal desde el inicio y opción de crecer con la expansión a nuevos hubs y a la franquicia.",
+    how: "Enviar currículum indicando \"Responsable de RR. HH.\" en el asunto.",
+    subject: "Responsable de RR. HH.",
+  },
+];
+
+const TL_CHANNELS = [
+  "La web de ThaiLoko y sus redes sociales",
+  "InfoJobs",
+  "Indeed",
+  "LinkedIn",
+  "Turijobs",
+  "Servicio Público de Empleo de la Comunidad de Madrid",
+  "Escuelas de hostelería y centros de FP",
+];
